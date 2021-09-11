@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Usuários</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/acao.js"></script>
+    <!-- css -->
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.contato{
+    width: 100%;
+    max-width: 500px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.field {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+#field{
+    cursor: pointer;
+}
+.decoration{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+  </style>
+
+</head>
+<body>
+<!-- nome, email , login, e senha -->
+<section class="content">
+    <div class="contato">
+    <form id="user">
+        <input class="field" type="text" name="nome" placeholder="Nome"><br>
+        <input class="field" type="email" name="email" placeholder="E-mail"><br>
+        <input class="field" type="text" name="login" placeholder="Login"><br>
+        <input class="field" type="password" name="senha" placeholder="Senha"><br>
+        <div class="nivel" style="color: gray;">Nivel</div><br>
+        <select name="nivel" id="nivel"></select><br><br>
+        <button class="field" id="field" class="decoration">Cadastrar</button>
+        <br>
+    <span id="display" style="color:red;"></span>
+    </form>
+    </div>
+</section>
+</body>
+</html>
